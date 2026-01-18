@@ -1,0 +1,26 @@
+kafka:
+  bootstrap_servers: "localhost:9092"
+  topic: "movie-viewing-events"
+  
+minio:
+  endpoint: "localhost:9000"
+  access_key: "minioadmin"
+  secret_key: "minioadmin"
+  bucket: "movie-data"
+  secure: false
+
+clickhouse:
+  host: "localhost"
+  port: 8123
+  database: "movie_analytics"
+  user: "default"
+  password: ""
+
+spark:
+  app_name: "MovieAnalytics"
+  master: "local[*]"
+  batch_interval: 10
+
+streamlit:
+  port: 8501
+  host: "0.0.0.0"
