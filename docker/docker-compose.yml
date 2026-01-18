@@ -48,13 +48,9 @@ services:
     container_name: clickhouse
     ports:
       - "8123:8123"
-      - "9000:9000"
-    environment:
-      CLICKHOUSE_DB: movie_analytics
-      CLICKHOUSE_USER: default
-      CLICKHOUSE_PASSWORD: ""
     volumes:
       - clickhouse_data:/var/lib/clickhouse
+
 
 volumes:
   minio_data:
